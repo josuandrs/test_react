@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Publicacion from "./nuevo/Publicacion";
 
+
 function App() {
   // La variable data es la que va a almacenar los datos de "stays.json" y setData nos ayudará a guardar esos datos en esa variable. Es necesario que inicialicemos esa variable como un array vacío para evitar errores.
   const [data, setData] = useState([]);
@@ -28,15 +29,30 @@ function App() {
   console.log(data);
   return (
     <>
-      <div>
-        <Publicacion />
-        {/* Aquí te dejo un ejemplo de cómo podrías imprimir varios elementos a la vez. */}
-          {data.map((el, i) => {
-            return <h1 key={i}>{el.city}</h1>;
-          })}
-      </div>
+      <div className="contenedor">
+        <div className="lugar">
+          <div className="cuontry">
+              <h1>Stay in Finland</h1>
+          </div>
+          <div className="stay">
+              <h3>12 + stay</h3>
+          </div>
+        </div>
+        <div className="anuncios">
+        {data.map((el, i) =>{
+          return (
+            <Publicacion 
+              key={i}
+              photo={el.photo}
+              type={el.type}
+              rating={el.rating}
+              title={el.title}
+            />
+          )})}
+        </div>
+      </div>      
     </>
-  );
+  )
 }
 
 export default App;

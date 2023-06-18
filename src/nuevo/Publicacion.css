@@ -1,0 +1,32 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 350px;
+}
+
+.imgBox{
+    position: relative;
+    width:390px;
+    height: 260px;
+    
+}
+
+.imgBox img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.type_rating{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.rating h3 i {
+    color: brown;
+}
+
