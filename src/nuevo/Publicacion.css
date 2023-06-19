@@ -1,14 +1,14 @@
 .card{
     display: flex;
     flex-direction: column;
-    width: 400px;
-    height: 350px;
+    width: 480px;
+    height: 450px;
 }
 
 .imgBox{
     position: relative;
-    width:390px;
-    height: 260px;
+    width:480px;
+    height: 360px;
     
 }
 
@@ -20,13 +20,28 @@
     object-fit: cover;
 }
 
+.informacion{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .type_rating{
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
+    padding: 20px 0;
+}
+
+.tipo{
+    color: #828282
 }
 
 .rating h3 i {
-    color: brown;
+    color: #EB5757;
 }
+
+.title{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
 

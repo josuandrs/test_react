@@ -12,19 +12,26 @@
     padding: 0 90px;
 }
 
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
 .lugar{
     display: flex;
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
     margin: 50px 0;
     align-items: baseline;
 }
 
 .lugar .stay{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;

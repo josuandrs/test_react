@@ -12,7 +12,7 @@ export default function Publicacion(props) {
             <h3>{props.type}</h3>
           </div>
           <div className='rating'>
-            <h3><i class='bx bxs-star'></i>{props.rating}</h3>
+            <h3><i className='bx bxs-star'></i>{props.rating}</h3>
           </div>
         </div>
         <div className='title'>

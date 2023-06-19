@@ -1,0 +1,41 @@
+.busqueda{
+    display: flex;
+    font-family: 'Mulish', sans-serif;
+    flex-direction: row;
+    outline: none;
+    
+    border: none;
+}
+
+.busqueda_city{
+    padding: 12px;
+    font-size: 12px;
+    border: 1px solid #fff;
+    font-weight: 200;
+    font-style: normal;
+    font-family: 'Mulish', sans-serif;
+    outline: none;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+}
+.busqueda_persona{
+    padding: 12px;
+    font-size: 12px;
+    color: #BDBDBD;
+    
+    font-family: 'Mulish', sans-serif;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+}
+.busqueda_lupa{
+    padding: 12px;
+    border: 1px solid #fff;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.busqueda_lupa i{
+    color: #EB5757;
+    font-size: 24px;
+}

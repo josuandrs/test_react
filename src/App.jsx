@@ -4,9 +4,6 @@ import Publicacion from "./nuevo/Publicacion";
 import logo from "./img/logo.png";
 import Search from "./nuevo/Search";
 
-
-
-
 function App() {
   // La variable data es la que va a almacenar los datos de "stays.json" y setData nos ayudará a guardar esos datos en esa variable. Es necesario que inicialicemos esa variable como un array vacío para evitar errores.
   const [data, setData] = useState([]);
