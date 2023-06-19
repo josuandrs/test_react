@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Publicacion from "./nuevo/Publicacion";
+import logo from "./img/logo.png";
+import Search from "./nuevo/Search";
+
+
 
 
 function App() {
@@ -30,6 +34,14 @@ function App() {
   return (
     <>
       <div className="contenedor">
+        <div className="head">
+          <picture>
+            <img src={logo} alt="" />
+          </picture>
+        <div className="search">
+          <Search />
+        </div>
+      </div>
         <div className="lugar">
           <div className="cuontry">
               <h1>Stay in Finland</h1>
@@ -47,6 +59,7 @@ function App() {
               type={el.type}
               rating={el.rating}
               title={el.title}
+              city={el.city}
             />
           )})}
         </div>
