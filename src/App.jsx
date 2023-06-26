@@ -35,10 +35,10 @@ function App() {
           <picture>
             <img src={logo} alt="" />
           </picture>
-        <div className="search">
-          <Search />
+          <div className="search">
+            <Search />
+          </div>
         </div>
-      </div>
         <div className="lugar">
           <div className="cuontry">
               <h1>Stay in Finland</h1>
@@ -54,11 +54,15 @@ function App() {
               key={i}
               photo={el.photo}
               type={el.type}
+              superHost={el.superHost}
               rating={el.rating}
               title={el.title}
               city={el.city}
             />
           )})}
+        </div>
+        <div className="piePagina">
+          <small>created by<u><strong> username</strong></u> - devChallenges.io</small>
         </div>
       </div>      
     </>
